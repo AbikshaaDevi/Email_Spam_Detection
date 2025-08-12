@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Spam Detector</title>
+</head>
+<body style="background-color:#f3eaea;">
+  <h1 style="text-align:center;">Email Spam Detector</h1>
+  <form method="POST" style="text-align:center;">
+    <textarea name="email" rows="10" cols="70" placeholder="Enter email content here..."></textarea><br><br>
+    <input type="submit" value="Predict">
+  </form>
+  {% if result %}
+    <h2 style="text-align:center;">Result: {{ result }}</h2>
+  {% endif %}
+</body>
+</html>
